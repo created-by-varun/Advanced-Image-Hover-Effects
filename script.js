@@ -26,7 +26,8 @@ Vue.component('card', {
     height: 0,
     mouseX: 0,
     mouseY: 0,
-    mouseLeaveDelay: null }),
+    mouseLeaveDelay: null
+  }),
 
   computed: {
     mousePX() {
@@ -39,21 +40,25 @@ Vue.component('card', {
       const rX = this.mousePX * 30;
       const rY = this.mousePY * -30;
       return {
-        transform: `rotateY(${rX}deg) rotateX(${rY}deg)` };
+        transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
+      };
 
     },
     cardBgTransform() {
       const tX = this.mousePX * -40;
       const tY = this.mousePY * -40;
       return {
-        transform: `translateX(${tX}px) translateY(${tY}px)` };
+        transform: `translateX(${tX}px) translateY(${tY}px)`
+      };
 
     },
     cardBgImage() {
       return {
-        backgroundImage: `url(${this.dataImage})` };
+        backgroundImage: `url(${this.dataImage})`
+      };
 
-    } },
+    }
+  },
 
   methods: {
     handleMouseMove(e) {
@@ -68,9 +73,18 @@ Vue.component('card', {
         this.mouseX = 0;
         this.mouseY = 0;
       }, 1000);
-    } } });
+    }
+  }
+});
 
 
 
 const app = new Vue({
-  el: '#app' });
+  el: '#app'
+});
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
