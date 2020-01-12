@@ -236,6 +236,10 @@ h1 + p, p + p {
 	-webkit-transition-delay: 0.25s;
 			transition-delay: 0.25s;
 }
+
+.section2 {
+  padding-top: 20px;
+}
 /* ============================== HOVER STYLE ============================== */
 /* =============== STYLE 1 =============== */
 .nd-style-1 .nd-icon {
