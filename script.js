@@ -1,3 +1,9 @@
+  /***********************
+  created-by-varun 
+  https://github.com/created-by-varun/ 
+  
+  ***********************/
+
 Vue.config.devtools = true;
 
 Vue.component('card', {
@@ -88,3 +94,9 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
+
+  /***********************
+  created-by-varun 
+  https://github.com/created-by-varun/ 
+  
+  ***********************/
